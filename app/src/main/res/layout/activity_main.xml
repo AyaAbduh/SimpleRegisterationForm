@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:padding="70dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="User Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALE"
+            android:button="@drawable/custom_box"
+            android:textColor="@drawable/radiobutton_color_selector"
+            android:checked="true"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_box"
+            android:textColor="@drawable/radiobutton_color_selector"
+            android:text="FEMALE"
+            android:padding="10dp"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_box"
+        android:padding="10dp"
+        android:text="Reading" />
+
+    <CheckBox
+        android:id="@+id/chkAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_box"
+        android:padding="10dp"
+        android:text="Learn new skill" />
+
+    <CheckBox
+        android:id="@+id/chkWindows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:button="@drawable/custom_box"
+        android:text="Travell" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginTop="80dp"/>
+
+
+
+</LinearLayout>
